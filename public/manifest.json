@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Game Review",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.youtube.com/watch*"
+  ]
+}
