@@ -7,9 +7,13 @@
   },
   "permissions": [
     "activeTab",
-    "storage"
+    "storage",
+    "tabs"
   ],
   "host_permissions": [
     "*://*.youtube.com/watch*"
-  ]
+  ],
+  "background":{
+    "service_worker": "background.js"
+  }
 }

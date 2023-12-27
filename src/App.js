@@ -38,7 +38,17 @@ function App() {
         fetchVideoDetails();
     }, [videoId]);
     if (!videoDetails) {
-        return <div>Not a Youtube Video.</div>;
+        return (
+            <div className="notApp">
+                <div className="video-details">
+                    <div className="video-metadata">
+                        <div className="notvideo-title">
+                            <h2>Not a video</h2>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        );
     }
     function extractVideoID(url) {
         try {
@@ -76,7 +86,7 @@ function App() {
                 </div>
                 <GetPrediction />
             </YoutubeLinkProvider>  
-    </div>
+        </div>
     );
 }
 

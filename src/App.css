@@ -1,15 +1,25 @@
 /* App.css */
-
-.App {
+.notApp{
   font-family: 'Arial', sans-serif;
-  width: 400px;   /* Fixed width */
-  height: 600px;  /* Fixed height */
+  width: 200px;   /* Fixed width */
+  height: 75px;  /* Fixed height */
   margin: 0 auto;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   background-color: #fff;
-  overflow: auto; /* In case content overflows */
+  overflow: hidden; /* In case content overflows */
+}
+.App {
+  font-family: 'Arial', sans-serif;
+  width: 400px;   /* Fixed width */
+  height: 550px;  /* Fixed height */
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #fff;
+  overflow: hidden; /* In case content overflows */
 }
 
 .prediction-container {
@@ -66,4 +76,13 @@
   .video-metadata {
       flex-basis: 100%;
   }
+}
+
+.notvideo-title{
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px; /* Add space between title and author */
+  color: #333;
+  text-align: center;
 }
