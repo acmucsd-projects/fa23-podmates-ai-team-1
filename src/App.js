@@ -21,8 +21,8 @@ function App() {
                             <h2>Not a video</h2>
                         </div>
                     </div>
+                </div>
             </div>
-        </div>
         );
     }
     function checkIfYoutubeLink(url) {
@@ -33,7 +33,7 @@ function App() {
         <div className="App">
             <YoutubeLinkProvider value={{ youtubeLink }}>
                 <GetData/>
-                <GetPrediction />    
+                <GetPrediction/>    
             </YoutubeLinkProvider>  
         </div>
     );
