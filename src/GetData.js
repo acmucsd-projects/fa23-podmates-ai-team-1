@@ -23,8 +23,8 @@ function GetData(){
 
             if (storedTitle && storedAuthor && storedThumbnail) {
                 setTitle(storedTitle);
-                setTitle(storedAuthor);
-                setTitle(storedThumbnail);
+                setAuthor(storedAuthor);
+                setThumbnail(storedThumbnail);
                 return;
             }
 
@@ -40,7 +40,7 @@ function GetData(){
                 chrome.storage.local.set({ ["author" + youtubeLink]: result.data[1]}, function() {
                     console.log('Author stored');
                 }); 
-                chrome.storage.local.set({ ["thumbnail" + youtubeLink]: result.data[2]}.url, function() {
+                chrome.storage.local.set({ ["thumbnail" + youtubeLink]: result.data[2].url}, function() {
                     console.log('Thumbnail stored');
                 });     
                 console.log(result.data);
