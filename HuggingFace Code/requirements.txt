@@ -1,0 +1,5 @@
+transformers
+tensorflow
+google-api-python-client
+scipy
+torch
