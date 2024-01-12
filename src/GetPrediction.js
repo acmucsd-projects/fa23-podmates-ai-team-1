@@ -36,7 +36,7 @@ function GetPrediction() {
             }
 
             try {
-                const app = await client("https://gamereview-youtubegamereview.hf.space/--replicas/lirca/");
+                const app = await client("https://gamereview-youtubegamereview2.hf.space/--replicas/4sb4a/");
                 const result = await app.predict("/rate", [youtubeLink]);
                 chrome.storage.local.set({ [youtubeLink]: result.data[0]}, function() {
                     console.log('Prediction stored');

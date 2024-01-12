@@ -29,7 +29,7 @@ function GetData(){
             }
 
             try{
-                const app = await client("https://gamereview-youtubegamereview.hf.space/--replicas/lirca/");
+                const app = await client("https://gamereview-youtubegamereview2.hf.space/--replicas/4sb4a/");
                 const result = await app.predict("/get_vid_details", [youtubeLink]);
                 setTitle(result.data[0]);
                 setAuthor(result.data[1]);
