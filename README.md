@@ -27,4 +27,4 @@ Find the proper file to download that works for your machine [here](https://node
 * Follow the steps from the previous header to upload it as an extension.
 
 ### Disclaimer
-We are running our API on a server with limited resources so expect waiting times to increase as more API calls are made.
+We are running our API on a server with limited resources so expect wait times to increase as more API calls are made.
